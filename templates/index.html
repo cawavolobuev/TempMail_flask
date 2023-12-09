@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block email %}
+<h2>{{ email }}</h2>
+<div class="d-flex gap-2 justify-content-center py-5">
+  <form method="POST">
+    <button class="btn btn-primary rounded-pill px-3" type="submit">Обновить адрес</button>
+  </form>
+    <a href="{{url_for('mailbox')}}"> <button class="btn btn-primary rounded-pill px-3"  type="button">Проверить ящик</button></a>
+</div>
+{% endblock %}
+

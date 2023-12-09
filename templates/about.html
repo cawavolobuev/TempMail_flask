@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block title %}
+О нас
+{% endblock %}
+
+{% block body %}
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h2>Временная почта</h2>
+      <p>Это временные адреса электронной почты, которые могут использоваться для различных целей.</p>
+</div>
+<div class="app-about">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Регистрация на сайтах</h4>
+          </div>
+          <div class="card-body">
+            <p class="text-about">При регистрации на различных веб-сайтах, которые могут потребовать предоставления адреса электронной почты, можно использовать временную почту, чтобы избежать получения рекламных или спам-сообщений от этих сайтов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Анонимность</h4>
+          </div>
+          <div class="card-body">
+            <p class="text-about">Если требуется оставаться анонимным при общении по электронной почте, можно использовать временную почту для отправки сообщений, не раскрывая свою настоящую личность или адрес электронной почты.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Безопасность</h4>
+          </div>
+          <div class="card-body">
+            <p class="text-about"> Если существует опасность получения вредоносных или фишинговых или нежелательных писем, можно использовать временную почту для временного получения сообщений и избежания возможных угроз безопасности.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<h2>Разработчики<br>///</h2>
+<div class="app-about">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Backend</h4>
+          </div>
+          <div class="card-body">
+            <img class='dev_img' src="{{url_for('static',filename='image/student1.png')}}" alt="student1">
+            <p class="text-about">Студент группы БТ-91:<br>Волобуев А.А.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Frontend</h4>
+          </div>
+          <div class="card-body">
+            <img class='dev_img' src="{{url_for('static',filename='image/student2.png')}}" alt="student2">
+            <p class="text-about">Студент группы БТ-91:<br>Мазнева О.А.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Team leader</h4>
+          </div>
+          <div class="card-body">
+            <img class='dev_img' src="{{url_for('static',filename='image/teacher.png')}}" alt="teacher">
+            <p class="text-about">Ктн., доцент:<br>Марухленко А.Л.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

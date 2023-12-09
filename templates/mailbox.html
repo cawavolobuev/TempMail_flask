@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Входящие
+{% endblock %}
+
+{% block emailbox %}
+{% for mail in box %}
+<div class="email-container">
+    <div class="header">От: {{ mail.get('from') }}<br>Кому: {{ email }}<br>Тема: {{ mail.get('subject') }}</div>
+    <div class="content">{{ mail.get('body') }}</div>
+    <div class="footer">Получено: {{ mail.get('date') }}</div>
+</div>
+{% endfor %}
+<div style="text-align:center">
+    <a href="{{url_for('mailbox')}}"> <button class="btn btn-primary rounded-pill px-3"  type="button">Обновить</button></a>
+</div>
+{% endblock %}
+
